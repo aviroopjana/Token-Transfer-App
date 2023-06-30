@@ -1,5 +1,5 @@
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
-import { Container, Flex, Text, Box} from "@chakra-ui/react";
+import { Container, Flex, Text, Box, color, background} from "@chakra-ui/react";
 import Link from "next/link";
 
 
@@ -47,7 +47,7 @@ export default function Navbar() {
                     </Flex>
                 )}
                 <Box mr={16} >
-                    <ConnectWallet/>
+                    <ConnectWallet theme="dark" />
                 </Box>
             </Flex>
         </Container>
