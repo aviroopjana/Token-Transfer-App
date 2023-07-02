@@ -4,6 +4,7 @@ import Link from "next/link";
 import { MediaRenderer } from "@thirdweb-dev/react";
 import { FEATURES_IMAGE_URL, HERO_IMAGE_URL } from "../const/addresses";
 import FeatureCard from "../component/FeatureCard";
+import Events from "../component/Events";
 
 
 const Home: NextPage = () => {
@@ -74,6 +75,7 @@ const Home: NextPage = () => {
           </Stack>
         </Box>
       </Flex>
+      <Events/>
     </Container>
   )
 };
