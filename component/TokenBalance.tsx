@@ -12,16 +12,15 @@ export default function TokenBalance({ tokenAddress } : Props ){
     const { contract } = useContract(tokenAddress);
 
     const  {
-        data: tokenBalance,
+        data: balance,
         isLoading: isTokenBalanceLoading,
     } = useTokenBalance(contract, address);
     
     return (
         <Box mt={4}>
             {!isTokenBalanceLoading && (
-                <Text>Balance: {tokenBalance?.displayValue}</Text>
+                <Text>Balance: {balance?.displayValue}</Text>
             )}
         </Box>
     )
-
 }
